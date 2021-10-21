@@ -25,7 +25,7 @@
  * Release version. Leave the Marlin version or apply a custom scheme.
  */
 #ifndef SHORT_BUILD_VERSION
-  #define SHORT_BUILD_VERSION "2.0-gmahto"
+  #define SHORT_BUILD_VERSION "2.0-gmahto " __DATE__ " - " __TIME__
 #endif
 
 /**

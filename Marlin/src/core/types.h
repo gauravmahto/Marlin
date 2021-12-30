@@ -64,6 +64,8 @@ struct IF<true, L, R> { typedef L type; };
   #define GANG_ITEM_E(N)
 #endif
 
+#define AXIS_COLLISION(L) (AXIS4_NAME == L || AXIS5_NAME == L || AXIS6_NAME == L)
+
 //
 // Enumerated axis indices
 //
@@ -82,7 +84,7 @@ enum AxisEnum : uint8_t {
   #undef _EN_ITEM
 
   // Core also keeps toolhead directions
-  #if EITHER(IS_CORE, MARKFORGED_XY)
+  #if ANY(IS_CORE, MARKFORGED_XY, MARKFORGED_YX)
     , X_HEAD, Y_HEAD, Z_HEAD
   #endif
 

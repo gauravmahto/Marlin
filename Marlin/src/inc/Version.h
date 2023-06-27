@@ -42,7 +42,7 @@
  * version was tagged.
  */
 #ifndef STRING_DISTRIBUTION_DATE
-  #define STRING_DISTRIBUTION_DATE "2023-06-20"
+  #define STRING_DISTRIBUTION_DATE __DATE__ " - " __TIME__
 #endif
 
 /**
@@ -97,7 +97,7 @@
    * documentation about a specific Marlin release. Displayed in the Info Menu.
    */
 #ifndef WEBSITE_URL
-  #define WEBSITE_URL "How are you?"
+  #define WEBSITE_URL "https://gauravmahto.github.io"
 #endif
 
 /**
